@@ -15,7 +15,7 @@ class PaginationResponse(BaseModel):
     returned: int
 
 
-class UserListResponse:
+class UserListResponse(BaseModel):
     data: list[UserResponse]
     pagination: PaginationResponse
 
