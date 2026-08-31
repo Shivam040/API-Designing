@@ -33,3 +33,11 @@ class TaskResponse(BaseModel):
     description: str | None
     priority: Priority
     completed: bool
+
+
+class TaskListResponse(BaseModel):
+    data: list[TaskResponse]
+    limit: int
+    offset: int
+    returned: int
+
