@@ -8,7 +8,7 @@ from fastapi import (
     Response,
     status,
 )
-from .pydantic_model import TaskUpdate, TaskResponse, TaskCreate, TaskReplace, TaskListResponse
+from .pydantic_model import TaskUpdate, TaskResponse, TaskCreate, TaskReplace, TaskListResponse, Priority
 
 app = FastAPI()
 
