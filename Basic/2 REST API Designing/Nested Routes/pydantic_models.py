@@ -11,6 +11,10 @@ class OrderCreate(BaseModel):
     item: list[OrderItemCreate] = Field(min_length=1)
 
 
+class OrderUpdate(BaseModel):
+    status: Literal["pending", "confirmed", "cancelled"]
+
+
 class OrderResponse(BaseModel):
     id: int
     user_id: int
